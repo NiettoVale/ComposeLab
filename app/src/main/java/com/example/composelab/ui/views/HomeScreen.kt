@@ -49,6 +49,10 @@ fun HomeScreen(navController: NavController) {
                 Button(onClick = { navController.navigate("login") }) {
                     Text(text = "Login UI")
                 }
+
+                Button(onClick = { navController.navigate("carrusel") }) {
+                    Text(text = "Carrusel de imagenes")
+                }
             }
         }
 

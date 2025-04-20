@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.example.composelab.ui.views.HomeScreen
+import com.example.composelab.ui.views.ImagesScreen
 import com.example.composelab.ui.views.LoginScreen
 
 // Función que define las rutas y sus pantallas asociadas
@@ -18,5 +19,7 @@ fun NavGraph(navController: NavHostController) {
         composable("home") { HomeScreen(navController) }
         // Definición de la pantalla Login
         composable("login") { LoginScreen(navController) }
+        // Definición de la pantalla Images
+        composable("carrusel") { ImagesScreen(navController) }
     }
 }
